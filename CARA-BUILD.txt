@@ -1,0 +1,14 @@
+CARA PALING MUDAH (tanpa install apa pun): GitHub Actions
+1. Buat akun GitHub (gratis) -> New repository (nama bebas, Public/Private bebas).
+2. Upload SEMUA isi folder ini (termasuk folder .github) ke repository.
+   Tip: di halaman repo klik "uploading an existing file", drag semua file.
+   Pastikan folder .github/workflows/build.yml ikut terupload.
+3. Buka tab "Actions" -> pilih workflow "build" -> tunggu centang hijau (+/- 3-5 menit).
+4. Klik run tersebut -> bagian "Artifacts" -> download "santaisurvival-jar".
+5. Ekstrak zip-nya -> dapat santaisurvival-1.0.0.jar.
+6. Upload jar itu + Fabric API ke folder mods/ di Aternos (Fabric 1.21.11).
+
+CARA LOKAL (Java 21 terpasang):
+   gradle wrapper --gradle-version 9.2.1
+   .\gradlew.bat build        (Windows)
+   Hasil: build/libs/santaisurvival-1.0.0.jar
